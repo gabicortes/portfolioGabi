@@ -1,0 +1,387 @@
+.vectorProjectsSection {
+  /* width: 100%;
+  height: 150px;
+  -webkit-clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% -180%, 104% 7%, 77% 32%, -6% 100%);
+  background-color: #e37971; */
+  position: absolute;
+  top: -119px;
+  border-top: 120px solid transparent;
+  border-right: 100vw solid #dadada;
+}
+
+.projectsSectionWrapper {
+  background-color: #dadada;
+  min-height: 750px;
+  position: relative;
+}
+
+.titleProjectsSection {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: #2e294e;
+  padding-bottom: 100px;
+}
+
+.projectsWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: 60px;
+}
+
+.imageBitacora,
+.imageHouseOfDonuts {
+  transition: height 1s ease-in-out, width 1s ease-in-out,
+    opacity 1s ease-in-out;
+}
+
+.imageProjects {
+  border-radius: 100%;
+  height: 300px;
+  width: 300px;
+  opacity: 1;
+}
+
+.imageCircleProjectSmall {
+  height: 70px;
+  width: auto;
+  border-radius: 100%;
+  opacity: 0;
+}
+
+.projectContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #2e294e;
+}
+
+.nameProjects {
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.clickHereButton {
+  color: transparent;
+  position: absolute;
+  font-size: 22px;
+  top: 50%;
+}
+.hyperlinkToHouseOfDonuts,
+.hyperlinkToBitacoraYogui {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.imageProjects:hover {
+  filter: brightness(15%);
+}
+
+.imageProjects:hover + .clickHereButton {
+  color: white;
+  font-weight: bold;
+}
+
+.clickHereButton:hover .imageProjects {
+  filter: brightness(15%);
+}
+
+.houseOfDonutsHideWhileBitacoraOpen {
+  border-radius: 100%;
+  height: 300px;
+  width: 300px;
+  opacity: 1;
+  display: none;
+}
+
+.bitacoraHideWhileHouseOpen {
+  opacity: 0;
+  display: none;
+}
+
+.buttonBackShow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #2e294e;
+  justify-content: flex-end;
+  font-size: 30px;
+  font-weight: 600;
+  max-width: max-content;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.textButtonBack {
+  padding-left: 5px;
+  font-size: 20px;
+}
+
+.iconButtonBack {
+  font-size: 25px;
+}
+
+.carousel-project-hidden {
+  display: none;
+  opacity: 0;
+}
+
+.carousel-project-show {
+  display: block;
+  max-width: 90%;
+  opacity: 1;
+  animation: fade 1s;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.imageSlideWrapper {
+  width: 35%;
+}
+
+.slideActive {
+  height: auto;
+  width: 100%;
+  max-width: 450px;
+  max-height: 450px;
+  border-radius: 22px;
+}
+
+.rigth-section-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 35%;
+  padding-left: 30px;
+}
+
+.arrowsBoxSlide {
+  color: #2e294e;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.arrowContainer {
+  width: 10%;
+}
+
+.left-arrow,
+.right-arrow {
+  height: 34px;
+  width: auto;
+  cursor: pointer;
+  padding: 5px 5px;
+  border-radius: 100%;
+  border: 3px solid #2e294e;
+  margin: 0 16px;
+}
+
+.titleSlide {
+  text-align: left;
+  font-size: 47px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.descriptionProjectSlide {
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.hyperlinkToProjectWebsite {
+  color: #2e294e;
+  font-size: 20px;
+  font-size: 16px;
+  font-weight: 800;
+  text-align: center;
+  padding: 7px 12px;
+  background-color: white;
+  width: max-content;
+  border-radius: 22px;
+  border: 1px solid #2e294e;
+}
+
+.hyperlinkToProjectWebsite:hover {
+  background-color: #2e294e;
+  color: white;
+  border: 1px solid white;
+}
+
+.slidesWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.slideBoxIncludingButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #2e294e;
+}
+.rigth-section-slide {
+  max-width: 50%;
+}
+
+@media (max-width: 1024px) {
+  .slideActive {
+    max-width: 370px;
+    max-height: 370px;
+  }
+  .titleSlide {
+    font-size: 30px;
+  }
+  .descriptionProjectSlide {
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .textButtonBack {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slideBox {
+    padding: 20px 0;
+  }
+
+  .slideActive {
+    max-width: 370px;
+    max-height: 370px;
+  }
+  .titleSlide {
+    font-size: 30px;
+  }
+  .descriptionProjectSlide {
+    font-weight: 600;
+    font-size: 13px;
+  }
+  .iconButtonBack {
+    font-size: 22px;
+  }
+  .textButtonBack {
+    font-size: 15px;
+  }
+  .hyperlinkToProjectWebsite {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+  .left-arrow,
+  .right-arrow {
+    height: 20px;
+    padding: 2px 5px;
+  }
+  .projectsSectionWrapper {
+    min-height: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel-project-show {
+    width: 100%;
+    max-width: 100%;
+  }
+  .projectsWrapper {
+    flex-direction: column;
+  }
+  .slideBoxIncludingButtons {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 120px;
+  }
+
+  .slidesWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+  .imageSlideWrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+  }
+  .rigth-section-slide {
+    text-align: center;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .slideActive {
+    max-height: 300px;
+    max-width: 300px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .hyperlinkToProjectWebsite {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .buttonBackShow {
+    margin-left: 25px;
+  }
+  .titleProjectsSection {
+    padding-bottom: 30px;
+  }
+  .imageProjects {
+    margin: 30px 0;
+  }
+  .projectsSectionWrapper {
+    min-height: 700px;
+  }
+  .left-arrow,
+  .right-arrow {
+    height: 16px;
+    padding: 5px 5px;
+  }
+  .arrowContainer {
+    width: auto;
+  }
+  .titleSlide {
+    font-size: 27px;
+    padding-top: 22px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .imageProjects {
+    height: 250px;
+    width: 250px;
+  }
+  .titleSlide {
+    font-size: 23px;
+  }
+  .titleProjectsSection {
+    font-size: 40px;
+  }
+}

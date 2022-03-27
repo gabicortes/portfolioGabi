@@ -1,0 +1,149 @@
+.technologiesWrapper {
+  background-color: #e37971;
+  padding-bottom: 119px;
+  position: relative;
+}
+
+.clipPathVectorTechnologiesSection {
+  /*
+  width: 100%;
+  height: 100px;
+  -webkit-clip-path: polygon(0 -201%, 104% 7%, 100% 100%, 0% 0);
+  clip-path: polygon(0 -201%, 104% 7%, 100% 100%, 0% 0);
+  background-color: #2e294e;
+  margin-bottom: 100px;
+  */
+  width: 100vw;
+  border-top: 120px solid transparent;
+  border-left: 100vw solid #e37971;
+  position: absolute;
+  top: -119px;
+}
+
+.titleTechnologies {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  /*padding-bottom: 100px;*/
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.technologiesBoxContainer {
+  position: relative;
+  height: 700px;
+  width: calc(100vw - (140px / 2));
+  top: 250px;
+}
+
+.technologiesBox {
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  color: #2e294e;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  font-size: 22px;
+  top: 100px;
+  left: 47%;
+  animation: rot 24s infinite linear;
+  font-weight: bold;
+}
+
+@keyframes rot {
+  from {
+    transform: rotate(0deg) translate(245px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(245px) rotate(-360deg);
+  }
+}
+
+.particlesWrapperTechnologies {
+  position: absolute;
+  width: 100%;
+  height: 750px;
+  overflow: hidden;
+  display: flex;
+}
+
+.technologiesBox1 {
+  animation-delay: 0s;
+}
+.technologiesBox2 {
+  animation-delay: -3s;
+}
+.technologiesBox3 {
+  animation-delay: -6s;
+}
+.technologiesBox4 {
+  animation-delay: -9s;
+}
+.technologiesBox5 {
+  animation-delay: -12s;
+}
+.technologiesBox6 {
+  animation-delay: -15s;
+}
+.technologiesBox7 {
+  animation-delay: -18s;
+}
+.technologiesBox8 {
+  animation-delay: -21s;
+}
+
+@media (max-width: 600px) {
+  .technologiesBoxContainer {
+    width: calc(100vw - (130px / 2));
+    top: 250px;
+  }
+  .technologiesBox {
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  @keyframes rot {
+    from {
+      transform: rotate(0deg) translate(140px) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translate(140px) rotate(-360deg);
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .titleTechnologies {
+    font-size: 40px;
+  }
+  .technologiesBoxContainer {
+    width: calc(100vw - (71px / 2));
+    top: 250px;
+  }
+  .technologiesBox {
+    width: 33px;
+    height: 33px;
+    font-size: 13px;
+    padding: 18px;
+  }
+
+  @keyframes rot {
+    from {
+      transform: rotate(0deg) translate(125px) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translate(125px) rotate(-360deg);
+    }
+  }
+  .particlesWrapperTechnologies {
+    height: 400px;
+  }
+}
